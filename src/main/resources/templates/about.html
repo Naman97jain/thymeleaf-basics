@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>About Page</title>
+</head>
+<body>
+	<h1>
+		Welcome to website of <span th:text="${name}"></span>
+	</h1>
+	<div th:with="a=5, b=6, n=${name}">
+		<h2>
+			One can declare local variables accessible within the tag scope using
+			<i>with</i> tag.
+			<br>
+			You can access a's value like this 
+			<span th:text="${a}"></span> 
+			<br>
+			You can access b's value like this 
+			<span th:text="${b}"></span> 
+			<br>
+			You can access n's value like this 
+			<span th:text="${n}"></span>
+			<br>
+			You can also use variable without span tag like this:
+		</h2>
+		<h3
+			th:text="'Hardcoded statement within th:text tag to display dynamic name= ' + ${name}">
+		</h3>
+		<h3
+			th:text="'Expressions can also be written using th:text. For example: sum of ' + ${a} +
+		' and ' + ${b} + ' is =  ' + ${a + b}">
+		</h3>
+		<h3>
+			You can use java basic inbuilt functions in thymeleaf also. For Example:
+			Length of name variable from model = <span th:text="${#strings.length(name)}"></span>
+		</h3>
+	</div>
+</body>
+</html>

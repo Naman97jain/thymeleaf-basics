@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Conditional Operator</title>
+</head>
+<body>
+	<h1 th:text="${name}"
+		th:style="name=='Naman' ? 'color:red' : 'color:green'"></h1>
+	<h1 th:if="${gender}=='M'">Male</h1>
+	<h1 th:unless="${gender=='M'}">Female</h1>
+	<div th:switch="${name}">
+		<h2 th:case="Naman">Naman</h2>
+		<h2 th:case="Jain">Jain</h2>
+		<h2 th:case="*">Default</h2>
+	</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Thymeleaf Fragments:
+- Replace -> Completely replace the host tag with the fragment tag.
+- Insert -> Insert the fragment tag in the host tag. (with the fragment tag)
+- Include -> Include the tags under fragment tag in the host tag.

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Fragment Practice</title>
+</head>
+<body>
+	<h1>Testing fragment INSERT/REPLACE/INCLUDE</h1>
+	
+	<!-- <footer id="host-component" th:insert="footer::footer1">
+	
+	</footer> -->
+	<footer id="host-with-parameters" th:replace="footer::footer1('this is title', 'this is subtitle')">
+	
+	</footer>
+</body>
+</html>

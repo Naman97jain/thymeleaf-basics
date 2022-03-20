@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" th:fragment="baseLayout(content, xyz)">
+<head>
+	<meta charset="UTF-8" />
+	<title>Base Page</title>
+</head>
+<body>
+	<header>This is my header</header>
+	<div th:replace="${content}"></div>
+	<footer>This is my footer<span th:text="${xyz}"></span></footer>
+</body>
+</html>

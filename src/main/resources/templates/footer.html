@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Footer Fragment</title>
+</head>
+<body>
+	<footer id="fragment-component" th:fragment="footer1(title, subtitle)">
+	
+		<div>
+			<h3>COPYRIGHT- Naman</h3>
+			<h3>Date- xxxxx</h3>
+			<h3>Thanks</h3>
+			<h4 th:text = "${title}"> </h4>
+			<h4 th:text = "${subtitle}"> </h4>
+		</div>
+	
+	</footer>
+</body>
+</html>
